@@ -1,0 +1,262 @@
+/**************************************************
+#DEFININGS
+**************************************************/
+
+@import 'variables';
+@import 'mixins';
+
+
+
+
+
+/**************************************************
+#GLOBAL
+**************************************************/
+
+@import 'global';
+
+
+
+
+
+/**************************************************
+#HEADER
+**************************************************/
+
+header { 
+    background-color: $tertiary-light;
+    
+    nav {
+        @extend header;
+    
+        .logo {
+            img {
+                width: 51px;
+            }
+            a {
+                font-family: $logo-font;
+                color: $primary-color;
+                font-size: 1.313em;
+                text-decoration: none;
+            }
+        }
+        .main-nav {
+            @include nav-styles;
+            float: right;
+            padding-top: 0.625em;
+            li { padding-right: 1.2em; }
+            li:last-child { padding-right: 0 }
+            .btn {
+                font-weight: 600;
+                border: 3px solid $tertiary-dark;
+                border-radius: 28px;
+                margin-top: -5px;
+                &:hover {
+                    color: $primary-color!important;
+                    border: 3px solid $primary-color; 
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+/**************************************************
+#HERO
+**************************************************/
+
+.hero {
+    background: url(../images/SVKP65LN31.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    border-radius: 0;
+    
+    h1 {
+        padding-top: 12.7em;
+        padding-bottom: 2rem;
+    }
+    
+    h2 { padding-bottom: 3.5rem; }
+    
+    .btn {
+        background-color: $primary-color;
+        border: $primary-color;
+        color: #fff;
+        &:hover {
+            background-color: $secondary-color;
+        }
+        @include button-font;
+        @include button-round;
+    }
+}
+
+.jumbotron { margin-bottom: 0 }
+
+
+
+/**************************************************
+#BENEFITS
+**************************************************/
+
+.benefits {
+    background-color: lighten($secondary-color, 10%);
+    padding: 7.5em 0 7.5em 0;
+    
+    .display-1 {
+        margin-bottom: .5em;
+    }
+}
+
+.card-text {
+    line-height: 2;
+    font-family: $nav-font;
+}
+
+span { color: $primary-color; }
+
+
+
+/**************************************************
+#MAILING LIST CTA
+**************************************************/
+
+.mailing-list-cta {
+    background: url(../images/AB1043F7D6.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 7.5em 0 7.5em 0;
+    
+    .mailing-list-text {
+        font-size: 1.5em; 
+    }
+    
+    .btn {
+        @include button-font;
+        font-size: 1.45em;
+        background-color: $secondary-color;
+        border: $secondary-color;
+        &:hover {
+            background-color: $primary-color;
+        }
+    }
+}
+
+
+
+
+
+/**************************************************
+#TESTIMONIALS
+**************************************************/
+.testimonials {
+    background: url(../images/orange-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    .client-quote {
+        font-family: $content-font;
+        font-weight: 700;
+        font-size: 2em;
+    }
+    .client { font-size: 1.3em }
+    i { 
+        color: lighten($tertiary-medium, 40%);
+        margin-top: .8em;
+        &:hover {
+            color: $tertiary-medium;  
+            cursor: pointer;
+        }
+    } 
+    .fa-chevron-right { float: right; }
+    img { max-width: 920px; }
+} 
+
+
+
+
+
+/**************************************************
+#FOOTER CTA
+**************************************************/
+
+.footer-cta {
+    background: url(../images/UCAUG8CL6R.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+     
+    h1 { font-size: 6em; }
+    
+    .btn {
+        @include button-font;
+        @include button-round;
+        border: 5px solid $secondary-color;
+        background-color: transparent;
+        color: #fff;
+        &:hover {
+            background-color: $secondary-color; 
+        }
+    }
+    
+    .overlay { 
+        background-color: rgba(253, 112, 20, .6);
+        padding: 1.5em 1.5em 2.5em 1.5em; 
+    }
+}
+
+
+
+
+
+/**************************************************
+#FOOTER
+**************************************************/
+
+footer {  
+    background: url(../images/orange-footer-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    .copyright {
+        img {
+            width: 65px;
+        }
+        a { 
+            color: $primary-color;
+            &:hover {
+                color: $secondary-color;
+                text-decoration: none; 
+            }
+        }
+    }
+    
+    nav {
+        @include nav-styles;
+        ul li {
+            padding-bottom: 1em;
+        }
+    }
+    
+    .social-nav {
+        li { 
+            background-color: $primary-color;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            
+        }
+        li:first-child {
+            padding-left: 5px; 
+        }
+        a {
+            padding-top: 10px; 
+            padding-left: 10px;  
+            color: $tertiary-light;
+            &:hover {
+                color: $secondary-color;
+            }
+        }
+    }
+}

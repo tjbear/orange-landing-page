@@ -1,0 +1,33 @@
+/**************************************************
+#NAVIGATION
+**************************************************/
+
+@mixin nav-styles {
+    li {
+        font-family: $nav-font;
+        font-weight: 600;  
+        a {
+                color: $tertiary-dark!important;
+                &:hover {
+                    color: $secondary-color!important;
+                    text-decoration: none!important;
+                }
+            }
+    }
+    
+}
+
+/**************************************************
+#BUTTONS
+**************************************************/
+@mixin button-font {
+    font-family: $content-font;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+@mixin button-round {
+    border-radius: 28px;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}

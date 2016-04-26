@@ -1,0 +1,231 @@
+/**************************************************
+#DEFININGS
+**************************************************/
+/**************************************************
+#PALETTE
+**************************************************/
+/**************************************************
+#TYPOGRAPHY
+**************************************************/
+/**************************************************
+#NAVIGATION
+**************************************************/
+/**************************************************
+#BUTTONS
+**************************************************/
+/**************************************************
+#GLOBAL
+**************************************************/
+/**************************************************
+#HEADINGS
+**************************************************/
+h1 {
+  font-family: "Lora", serif;
+  color: #eee;
+  font-size: 2.8em;
+  font-weight: 700; }
+
+h2 {
+  font-family: "Lora", serif;
+  font-weight: 400;
+  color: #eee; }
+
+/**************************************************
+#TEXT
+**************************************************/
+p {
+  font-family: "Lora", serif;
+  font-size: 1.125em;
+  color: #222831; }
+
+/**************************************************
+#HEADER
+**************************************************/
+header, header nav {
+  background-color: #eee; }
+  header nav .logo img {
+    width: 51px; }
+  header nav .logo a {
+    font-family: "Kaushan Script", cursive;
+    color: #fd7014;
+    font-size: 1.313em;
+    text-decoration: none; }
+  header nav .main-nav {
+    float: right;
+    padding-top: 0.625em; }
+    header nav .main-nav li {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 600; }
+      header nav .main-nav li a {
+        color: #222831 !important; }
+        header nav .main-nav li a:hover {
+          color: #7fcb59 !important;
+          text-decoration: none !important; }
+    header nav .main-nav li {
+      padding-right: 1.2em; }
+    header nav .main-nav li:last-child {
+      padding-right: 0; }
+    header nav .main-nav .btn {
+      font-weight: 600;
+      border: 3px solid #222831;
+      border-radius: 28px;
+      margin-top: -5px; }
+      header nav .main-nav .btn:hover {
+        color: #fd7014 !important;
+        border: 3px solid #fd7014; }
+
+/**************************************************
+#HERO
+**************************************************/
+.hero {
+  background: url(../images/SVKP65LN31.jpg);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  border-radius: 0; }
+  .hero h1 {
+    padding-top: 12.7em;
+    padding-bottom: 2rem; }
+  .hero h2 {
+    padding-bottom: 3.5rem; }
+  .hero .btn {
+    background-color: #fd7014;
+    border: #fd7014;
+    color: #fff;
+    font-family: "Lora", serif;
+    font-weight: 700;
+    font-size: 2rem;
+    border-radius: 28px;
+    padding-left: 1.5em;
+    padding-right: 1.5em; }
+    .hero .btn:hover {
+      background-color: #7fcb59; }
+
+.jumbotron {
+  margin-bottom: 0; }
+
+/**************************************************
+#BENEFITS
+**************************************************/
+.benefits {
+  background-color: #9dd780;
+  padding: 7.5em 0 7.5em 0; }
+  .benefits .display-1 {
+    margin-bottom: .5em; }
+
+.card-text {
+  line-height: 2;
+  font-family: "Open Sans", sans-serif; }
+
+span {
+  color: #fd7014; }
+
+/**************************************************
+#MAILING LIST CTA
+**************************************************/
+.mailing-list-cta {
+  background: url(../images/AB1043F7D6.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 7.5em 0 7.5em 0; }
+  .mailing-list-cta .mailing-list-text {
+    font-size: 1.5em; }
+  .mailing-list-cta .btn {
+    font-family: "Lora", serif;
+    font-weight: 700;
+    font-size: 2rem;
+    font-size: 1.45em;
+    background-color: #7fcb59;
+    border: #7fcb59; }
+    .mailing-list-cta .btn:hover {
+      background-color: #fd7014; }
+
+/**************************************************
+#TESTIMONIALS
+**************************************************/
+.testimonials {
+  background: url(../images/orange-bg.jpg);
+  background-size: cover;
+  background-position: center; }
+  .testimonials .client-quote {
+    font-family: "Lora", serif;
+    font-weight: 700;
+    font-size: 2em; }
+  .testimonials .client {
+    font-size: 1.3em; }
+  .testimonials i {
+    color: #9ca3af;
+    margin-top: .8em; }
+    .testimonials i:hover {
+      color: #393e46;
+      cursor: pointer; }
+  .testimonials .fa-chevron-right {
+    float: right; }
+  .testimonials img {
+    max-width: 920px; }
+
+/**************************************************
+#FOOTER CTA
+**************************************************/
+.footer-cta {
+  background: url(../images/UCAUG8CL6R.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+  .footer-cta h1 {
+    font-size: 6em; }
+  .footer-cta .btn {
+    font-family: "Lora", serif;
+    font-weight: 700;
+    font-size: 2rem;
+    border-radius: 28px;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    border: 5px solid #7fcb59;
+    background-color: transparent;
+    color: #fff; }
+    .footer-cta .btn:hover {
+      background-color: #7fcb59; }
+  .footer-cta .overlay {
+    background-color: rgba(253, 112, 20, 0.6);
+    padding: 1.5em 1.5em 2.5em 1.5em; }
+
+/**************************************************
+#FOOTER
+**************************************************/
+footer {
+  background: url(../images/orange-footer-bg.jpg);
+  background-size: cover;
+  background-position: center; }
+  footer .copyright img {
+    width: 65px; }
+  footer .copyright a {
+    color: #fd7014; }
+    footer .copyright a:hover {
+      color: #7fcb59;
+      text-decoration: none; }
+  footer nav li {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600; }
+    footer nav li a {
+      color: #222831 !important; }
+      footer nav li a:hover {
+        color: #7fcb59 !important;
+        text-decoration: none !important; }
+  footer nav ul li {
+    padding-bottom: 1em; }
+  footer .social-nav li {
+    background-color: #fd7014;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px; }
+  footer .social-nav li:first-child {
+    padding-left: 5px; }
+  footer .social-nav a {
+    padding-top: 10px;
+    padding-left: 10px;
+    color: #eee; }
+    footer .social-nav a:hover {
+      color: #7fcb59; }
+
+/*# sourceMappingURL=style.css.map */
