@@ -280,6 +280,12 @@ footer {
 #MEDIA-QUERIES
 **************************************************/
 @media (max-width: 74.9em) {
+  .hero {
+    background: url(../images/orangey.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat; }
+
   .hero h1 {
     padding-top: 2em; }
 
