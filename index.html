@@ -27,21 +27,25 @@
     <!-- Header -->
     <header>
         <nav class="navbar navbar-full navbar-fixed-top navbar-light">
-                <div class="container">
+            <div class="container">
+                <!--- Mobile Menu Button -->
+                <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#main-nav-mobi"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></button> 
                 <!-- Logo -->
                 <div class="logo navbar-brand">
-                    <a href="index.html">
+                    <a href="#">
                         <img src="images/orange-logo-final.png" alt="">
                         Orange
                     </a>
                 </div>
                 <!-- Navigation -->
-                <ul class="nav navbar-nav main-nav text-uppercase">
-                    <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Benefits</a></li>
-                    <li class="nav-item"><a class="nav-link"  href="#">Nutrition</a></li>
-                    <li class="nav-item"><a class="nav-link btn" href="#">Buy Now</a></li>
-                </ul>
+                <div class="collapse navbar-toggleable-sm" id="main-nav-mobi">
+                    <ul class="nav navbar-nav main-nav text-uppercase">
+                        <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Benefits</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="#">Nutrition</a></li>
+                        <li class="nav-item"><a class="nav-link btn" href="#">Buy Now</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
 
@@ -127,7 +131,7 @@
     </section>
 
     <!-- Testimonials -->
-    <section class="testimonials p-y-3">
+    <section class="testimonials hidden-md-down p-y-3">
         <div class="container">
             <div id="carousel-example-generic" class="carousel slide m-t-1" data-ride="carousel">
               <ol class="carousel-indicators">
@@ -167,7 +171,7 @@
                 <span class="sr-only">Next</span>
               </a>
             </div>
-            <img class="center-block" src="images/Orange_and_cross_section.jpg" alt="">
+            <img class="center-block hidden-md-down" src="images/Orange_and_cross_section.jpg" alt="">
         </div>
     </section>
 
@@ -221,6 +225,12 @@
 
     <!-- jQuery first, then Bootstrap JS. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+        })  
+    </script>
     <script src="js/bootstrap.min.js"></script>
     
   </body>

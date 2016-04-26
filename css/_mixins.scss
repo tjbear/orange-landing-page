@@ -44,4 +44,32 @@
     -ms-transform: translateZ(0);
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
+            &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: $secondary-color;
+        border-radius: 100%;
+        -moz-transform: scale(0);
+        -o-transform: scale(0);
+        -ms-transform: scale(0);
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        -webkit-transition: all 0.3s ease-out;
+        -moz-transition: all 0.3s ease-out;
+        -ms-transition: all 0.3s ease-out;
+        -o-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+        z-index: -1; }
+      &:hover {
+        color: #fff !Important; }
+        &:hover:before {
+          -moz-transform: scale(2);
+          -o-transform: scale(2);
+          -ms-transform: scale(2);
+          -webkit-transform: scale(2);
+          transform: scale(2); }
 }

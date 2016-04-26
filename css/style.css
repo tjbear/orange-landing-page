@@ -97,48 +97,9 @@ header, header nav {
     font-size: 2rem;
     border-radius: 28px;
     padding-left: 1.5em;
-    padding-right: 1.5em;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    box-shadow: 0 0 1px transparent;
-    position: relative;
-    overflow: hidden;
-    -moz-transform: translateZ(0);
-    -o-transform: translateZ(0);
-    -ms-transform: translateZ(0);
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0); }
+    padding-right: 1.5em; }
     .hero .btn:hover {
       background-color: #7fcb59; }
-    .hero .btn:before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: #7fcb59;
-      border-radius: 100%;
-      -moz-transform: scale(0);
-      -o-transform: scale(0);
-      -ms-transform: scale(0);
-      -webkit-transform: scale(0);
-      transform: scale(0);
-      -webkit-transition: all 0.3s ease-out;
-      -moz-transition: all 0.3s ease-out;
-      -ms-transition: all 0.3s ease-out;
-      -o-transition: all 0.3s ease-out;
-      transition: all 0.3s ease-out;
-      z-index: -1; }
-    .hero .btn:hover {
-      color: #fff !Important; }
-    .hero .btn:hover:before {
-      -moz-transform: scale(2);
-      -o-transform: scale(2);
-      -ms-transform: scale(2);
-      -webkit-transform: scale(2);
-      transform: scale(2); }
 
 .jumbotron {
   margin-bottom: 0; }
@@ -190,7 +151,7 @@ span {
     font-family: "Lora", serif;
     font-weight: 700;
     font-size: 2em;
-    width: 600px; }
+    max-width: 600px; }
   .testimonials .client {
     font-size: 1.3em; }
   .testimonials i {
@@ -314,5 +275,47 @@ footer {
     color: #eee; }
     footer .social-nav a:hover {
       color: #7fcb59; }
+
+/**************************************************
+#MEDIA-QUERIES
+**************************************************/
+@media (max-width: 74.9em) {
+  .hero h1 {
+    padding-top: 2em; }
+
+  .benefits .display-1, .footer-cta h1 {
+    font-size: 3em; }
+
+  footer {
+    background: url(../images/orange-footer-bg-alt.jpg);
+    background-size: cover;
+    background-position: center; } }
+@media (max-width: 61.9em) {
+  .mailing-list-text {
+    background-color: rgba(253, 112, 20, 0.9);
+    padding: .313em; } }
+@media (max-width: 33.9em) {
+  .footer-cta .btn {
+    font-size: 1.5rem;
+    padding-left: .5em;
+    padding-right: .5em; } }
+@media (max-width: 47.9em) {
+  .navbar .navbar-toggler {
+    float: right; }
+
+  .main-nav {
+    float: none; }
+
+  .navbar-nav {
+    margin-bottom: 1em; }
+    .navbar-nav li:first-child {
+      width: 100%;
+      padding-left: 1em; }
+    .navbar-nav li:nth-child(3) {
+      width: 100%; }
+    .navbar-nav li:last-child {
+      position: relative;
+      left: -15px;
+      top: 5px; } }
 
 /*# sourceMappingURL=style.css.map */
