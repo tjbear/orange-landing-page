@@ -97,9 +97,48 @@ header, header nav {
     font-size: 2rem;
     border-radius: 28px;
     padding-left: 1.5em;
-    padding-right: 1.5em; }
+    padding-right: 1.5em;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    overflow: hidden;
+    -moz-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); }
     .hero .btn:hover {
       background-color: #7fcb59; }
+    .hero .btn:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #7fcb59;
+      border-radius: 100%;
+      -moz-transform: scale(0);
+      -o-transform: scale(0);
+      -ms-transform: scale(0);
+      -webkit-transform: scale(0);
+      transform: scale(0);
+      -webkit-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+      -ms-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out;
+      z-index: -1; }
+    .hero .btn:hover {
+      color: #fff !Important; }
+    .hero .btn:hover:before {
+      -moz-transform: scale(2);
+      -o-transform: scale(2);
+      -ms-transform: scale(2);
+      -webkit-transform: scale(2);
+      transform: scale(2); }
 
 .jumbotron {
   margin-bottom: 0; }
@@ -150,7 +189,8 @@ span {
   .testimonials .client-quote {
     font-family: "Lora", serif;
     font-weight: 700;
-    font-size: 2em; }
+    font-size: 2em;
+    width: 600px; }
   .testimonials .client {
     font-size: 1.3em; }
   .testimonials i {
@@ -163,6 +203,14 @@ span {
     float: right; }
   .testimonials img {
     max-width: 920px; }
+
+.carousel-control.left, .carousel-control.right {
+  background-image: none !important;
+  filter: none !important; }
+
+.carousel-control .icon-prev,
+.carousel-control .icon-next {
+  font-size: 100px; }
 
 /**************************************************
 #FOOTER CTA
@@ -183,9 +231,48 @@ span {
     padding-right: 1.5em;
     border: 5px solid #7fcb59;
     background-color: transparent;
-    color: #fff; }
+    color: #fff;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    overflow: hidden;
+    -moz-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); }
     .footer-cta .btn:hover {
       background-color: #7fcb59; }
+    .footer-cta .btn:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #7fcb59;
+      border-radius: 100%;
+      -moz-transform: scale(0);
+      -o-transform: scale(0);
+      -ms-transform: scale(0);
+      -webkit-transform: scale(0);
+      transform: scale(0);
+      -webkit-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+      -ms-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out;
+      z-index: -1; }
+    .footer-cta .btn:hover {
+      color: #fff !Important; }
+    .footer-cta .btn:hover:before {
+      -moz-transform: scale(2);
+      -o-transform: scale(2);
+      -ms-transform: scale(2);
+      -webkit-transform: scale(2);
+      transform: scale(2); }
   .footer-cta .overlay {
     background-color: rgba(253, 112, 20, 0.6);
     padding: 1.5em 1.5em 2.5em 1.5em; }
